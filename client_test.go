@@ -33,8 +33,6 @@ func (s *ClientSuite) TestRealRequest() {
 
 	client := NewClient(
 		"https://cityads.com/api/rest/webmaster/json",
-		1526131,
-		"3b5bd81c8efc056f8a1ffb1d9e8ef1e3",
 		"0f2fbd50ccca4aada2161c2c10b2b8fd",
 	)
 
@@ -50,8 +48,6 @@ func (s *ClientSuite) TestRealRequest() {
 func (s *ClientSuite) TestErrRequest() {
 	client := NewClient(
 		s.server.URL+"/api/rest/webmaster/json/",
-		123,
-		"xxx",
 		"xxx",
 	)
 
