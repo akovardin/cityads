@@ -71,4 +71,4 @@ for _, offer := range r.Data.Items {
 
 ## Credentials
 
-You can get remote auth key here: https://cityads.com/publisher/api
+You can get remote auth key here: [https://cityads.com/ru/webmaster/office/api](https://cityads.com/ru/webmaster/office/api)
