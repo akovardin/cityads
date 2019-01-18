@@ -16,18 +16,16 @@ func (e ApiError) Error() string {
 }
 
 type Client struct {
-	clientId   int
-	secretKey  string
-	remoteAuth string
 	url        string
+	remoteAuth string
 
 	client *http.Client
 }
 
 func NewClient(url string, remoteAuth string) *Client {
 	return &Client{
-		remoteAuth: remoteAuth,
 		url:        url,
+		remoteAuth: remoteAuth,
 		client:     &http.Client{},
 	}
 }

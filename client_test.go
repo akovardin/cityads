@@ -28,23 +28,6 @@ func (s *ClientSuite) TearDownSuite() {
 	}
 }
 
-func (s *ClientSuite) TestRealRequest() {
-	s.T().Skip()
-
-	client := NewClient(
-		"https://cityads.com/api/rest/webmaster/json",
-		"0f2fbd50ccca4aada2161c2c10b2b8fd",
-	)
-
-	params := url.Values{}
-	params.Add("user_has_offer", "true")
-	resp, err := client.request("offers/web", "GET", params)
-	s.Assert().Nil(err)
-
-	s.T().Log(err)
-	s.T().Log(resp)
-}
-
 func (s *ClientSuite) TestErrRequest() {
 	client := NewClient(
 		s.server.URL+"/api/rest/webmaster/json/",
