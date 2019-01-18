@@ -1,6 +1,6 @@
 # Cityads API
 
-A Go wrapper around Admitad API
+A Go wrapper around Cityads API
 
 ## Install
 
@@ -21,11 +21,6 @@ Call(url, method string, params url.Values, result interface{}) error
 Create client:
 
 ```go
-var (
-    base64Header = "xxx"
-    clientId = "xxx"
-)
-
 client := cityads.NewClient(
     "https://cityads.com/api/rest/webmaster/json",
     "xxx",
@@ -74,8 +69,6 @@ for _, offer := range r.Data.Items {
 }
 ```
 
-`Banner`, `Websites`, `Campaigns` - it's types from current application, not from package
-
 ## Credentials
 
-You can get `base64Header` and `clientId` here: https://www.admitad.com/ru/webmaster/account/settings/credentials/
+You can get remote auth key here: https://cityads.com/publisher/api
