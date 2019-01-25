@@ -1,3 +1,3 @@
-module github.com/horechek/сityads
+module github.com/horechek/cityads
 
 require github.com/stretchr/testify v1.3.0
